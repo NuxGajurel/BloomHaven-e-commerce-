@@ -4,6 +4,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Product from './components/Product'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 
 const App = () => {
@@ -20,9 +21,10 @@ const App = () => {
       
         
        </Routes>
-       
+        <Footer/>
        
        </BrowserRouter>
+      
        
     </div>
   )

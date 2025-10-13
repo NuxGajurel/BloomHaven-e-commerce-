@@ -16,18 +16,20 @@ const Home = () => {
 
   return (
     <div className='mt-2'>
-      <h1 className='lg:text-4xl text-3xl mt-7 m-4'>OUR PRODUCTS</h1>
+      <h1 className='lg:text-4xl text-3xl mt-7 m-6'>OUR PRODUCTS</h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 m-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 m-6">
         {flowerProducts.map((flowerProduct) => (
        <Link to="/products">
-        <div key={flowerProduct.id} className="rounded p-2 bg-white shadow-md">
-            <img src={flowerProduct.url} alt={`Flower ${flowerProduct.id}`} className="w-full h-100 object-cover" />
+        <div key={flowerProduct.id} className="rounded p-1 bg-white shadow-md items-center flex justify-center">
+            <img src={flowerProduct.url} alt={`Flower ${flowerProduct.id}`} className="lg:w-full lg:h-100 lg:object-cover w-90 h-90" />
           </div>
 
        </Link>  
         ))}
       </div>
+
+
     </div>
   )
 }
