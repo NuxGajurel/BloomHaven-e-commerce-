@@ -4,7 +4,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Product from './components/Product'
 import Navbar from './components/Navbar'
-import AddToCard from './components/AddToCard'
+
 
 const App = () => {
   return (
@@ -17,8 +17,7 @@ const App = () => {
         <Route path='/home' element={<Home/>}/>
         <Route path='/product' element={<Product/>}/>
         <Route path='/about' element={<About/>}/>
-       <Route path='/addto' element={<AddToCard/>}/>
-        
+      
         
        </Routes>
        

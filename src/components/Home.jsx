@@ -1,51 +1,35 @@
 import React from 'react'
 import Flower from '../../public/Img/mero.jpg'
+import Two from '../../public/Img/6.jpg'
+import Three from '../../public/Img/3.jpg'
+import Four from '../../public/Img/7.jpg'
+import { Link } from 'react-router-dom'
+
 const Home = () => {
 
-  const flowerProducts =[
-    {
-      id:1 , name:"sunFlower" , price:1100 , inStock:true , describe :"This is a sun flower flower from kathmandu patan.",url:Flower ,
-
-    },
-    {
-      id:2 , name:"sunFlower" , price:1100 , inStock:true , describe :"This is a sun flower flower from kathmandu patan.",url:Flower ,
-
-    },
-    {
-      id:3 , name:"sunFlower" , price:1100 , inStock:true , describe :"This is a sun flower flower from kathmandu patan.",url:Flower ,
-
-    },
-      {
-      id:4 , name:"sunFlower" , price:1100 , inStock:true , describe :"This is a sun flower flower from kathmandu patan.",url:Flower ,
-
-    },
-  ]
+  const flowerProducts = [
+    { id: 1, url: Flower },
+    { id: 2, url: Two },
+    { id: 3, url: Three },
+    { id: 4, url: Four },
+  ];
 
   return (
-    <div>
-  <div className='mt-2'>
+    <div className='mt-2'>
+      <h1 className='lg:text-4xl text-3xl mt-7 m-4'>OUR PRODUCTS</h1>
 
-  <div>
-{
-  flowerProducts.map((flowerProduct)=>(
-    <div className='grid grid-cols-3 shadow-md bg-white'> 
-      <div className='flex flex-col col-4 space-x-5 mt-4' key={flowerProduct.id}>
-        <img src={flowerProduct.url} alt=""  className='h-100 w-100'/>
-        <h3 className='text-2xl'>{flowerProduct.price}</h3>
-        <p>{flowerProduct.describe}</p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 m-4">
+        {flowerProducts.map((flowerProduct) => (
+       <Link to="/products">
+        <div key={flowerProduct.id} className="rounded p-2 bg-white shadow-md">
+            <img src={flowerProduct.url} alt={`Flower ${flowerProduct.id}`} className="w-full h-100 object-cover" />
+          </div>
 
+       </Link>  
+        ))}
       </div>
-    </div>
-  ))
-}
-  
-  
-  </div>
- 
-  </div>
-      
     </div>
   )
 }
 
-export default Home
+export default Home;
