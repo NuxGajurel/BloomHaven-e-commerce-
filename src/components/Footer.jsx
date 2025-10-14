@@ -14,16 +14,16 @@ const Footer = () => {
        <Link to="/home" className="hover:text-pink-600 transition-colors text-black">Home</Link>
         <Link to="/product" className="hover:text-pink-600 transition-colors">Product</Link>
         <Link to="/about" className="hover:text-pink-600 transition-colors">About</Link>
-        <a href="https://github.com/NuxGajurel/BloomHaven-e-commerce-">GitHub Repo</a>
+        <a href="https://github.com/NuxGajurel/BloomHaven-e-commerce-" className="hover:text-pink-600 transition-colors">GitHub Repo</a>
 
       
    
       </div>
        <div className='grid grid-rows-4 space-x-3 lg:m-9 mt-2'>
-         <a href="https://github.com/NuxGajurel">GitHub</a>
-         <a href="https://www.instagram.com/nuxgajurel/">Instagram</a>
-         <a href="https://www.linkedin.com/in/nux-gajurel-355962348/">Linkedin</a>
-         <a href="nuxgajurel46@gmail.com">G-mail</a>
+         <a href="https://github.com/NuxGajurel" className="hover:text-pink-600 transition-colors">GitHub</a>
+         <a href="https://www.instagram.com/nuxgajurel/" className="hover:text-pink-600 transition-colors">Instagram</a>
+         <a href="https://www.linkedin.com/in/nux-gajurel-355962348/" className="hover:text-pink-600 transition-colors">Linkedin</a>
+         <a href="nuxgajurel46@gmail.com" className="hover:text-pink-600 transition-colors">G-mail</a>
          </div>
        
        
