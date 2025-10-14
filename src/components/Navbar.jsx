@@ -6,7 +6,7 @@ import Logo from "../../public/Img/logo.png";
 import { RxCross1 } from "react-icons/rx";
 const Navbar = () => {
   const [openAdd, setOpenAdd] = useState(false);
-  const[openSearchBar , setOpenSearchBar]=useState(false);
+  const [openSearchBar, setOpenSearchBar] = useState(false);
 
   return (
     <div>
@@ -14,24 +14,33 @@ const Navbar = () => {
         {/* search bar */}
         <div>
           <h4>
-            <IoSearchOutline size={22} onClick={()=> setOpenSearchBar(!openSearchBar)}/>
+            <IoSearchOutline
+              size={22}
+              onClick={() => setOpenSearchBar(!openSearchBar)}
+            />
           </h4>
-<div className={`${openSearchBar ? "block" : "hidden"} pb-5 fixed top-2 right-0 w-full bg-white shadow-lg transform transition-transform duration-200 z-20 flex justify-center h-22`}>
- 
- <div className="grid grid-cols-2 space-x-0 mt-5">
-
-<input type="search" className="lg:flex lg:justify-center lg:w-150 border border-pink-600 hover:border-pink-600 lg:h-10 h-8 mt-3 sm:w-58 flex justify-center items-center ml-3 w-55" placeholder="Type here to search....."/>
-<button onClick={()=> setOpenSearchBar(false)} size={27} className="">  close</button>
- </div>
-
-</div>
-       
-
-
+          <div
+            className={`${
+              openSearchBar ? "block" : "hidden"
+            } pb-5 fixed top-2 right-0 w-full bg-white shadow-lg transform transition-transform duration-200 z-20 flex justify-center h-22`}
+          >
+            <div className="grid grid-cols-2 space-x-0 mt-5">
+              <input
+                type="search"
+                className="lg:flex lg:justify-center lg:w-150 border border-pink-600 hover:border-pink-600 lg:h-10 h-8 mt-3 sm:w-58 flex justify-center items-center ml-3 w-55"
+                placeholder="Type here to search....."
+              />
+              <button
+                onClick={() => setOpenSearchBar(false)}
+                size={27}
+                className=""
+              >
+                {" "}
+                close
+              </button>
+            </div>
+          </div>
         </div>
-
-
-
 
         <div className="">
           <div className="flex gap-8 text-gray-700 ">
@@ -40,7 +49,7 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-   
+
         <div className="relative">
           <MdOutlineShoppingCart
             size={23}
