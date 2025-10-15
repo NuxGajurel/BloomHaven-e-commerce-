@@ -4,6 +4,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoSearchOutline } from "react-icons/io5";
 import Logo from "../../public/Img/logo.png";
 import { RxCross1 } from "react-icons/rx";
+
 const Navbar = () => {
   const [openAdd, setOpenAdd] = useState(false);
   const [openSearchBar, setOpenSearchBar] = useState(false);
@@ -32,11 +33,11 @@ const Navbar = () => {
               />
               <button
                 onClick={() => setOpenSearchBar(false)}
-                size={27}
-                className=""
+                size={50}
+                
               >
-                {" "}
-                close
+             close
+             
               </button>
             </div>
           </div>
@@ -73,8 +74,6 @@ const Navbar = () => {
           About
         </Link>
       </div>
-
-      {/* Add to card  */}
 
       <div
         className={`fixed top-0 right-0 h-full w-80 bg-white shadow-lg transform transition-transform duration-200 z-20 ${
