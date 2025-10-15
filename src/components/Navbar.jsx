@@ -31,13 +31,8 @@ const Navbar = () => {
                 className="lg:flex lg:justify-center lg:w-150 border border-pink-600 hover:border-pink-600 lg:h-10 h-8 mt-3 sm:w-58 flex justify-center items-center ml-3 w-55"
                 placeholder="Type here to search....."
               />
-              <button
-                onClick={() => setOpenSearchBar(false)}
-                size={50}
-                
-              >
-             close
-             
+              <button onClick={() => setOpenSearchBar(false)} size={50}>
+                close
               </button>
             </div>
           </div>
@@ -58,7 +53,7 @@ const Navbar = () => {
           />
         </div>
       </nav>
-      <hr className="bg-white shadow-md" />
+      <hr className="boader border-gray-200" />
 
       <div className="flex justify-center space-x-5 mt-5">
         <Link
