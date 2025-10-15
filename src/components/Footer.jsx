@@ -10,7 +10,7 @@ const Footer = () => {
         </div>
 
         <div className="grid grid-rows-4 space-x-3 mt-9">
-           <h2>Pages</h2>
+          <h2>Pages</h2>
           <Link
             to="/home"
             className="hover:text-pink-600 transition-colors text-black"

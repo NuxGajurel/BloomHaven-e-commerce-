@@ -6,7 +6,6 @@ const About = () => {
     <div>
       <div className="">
         <h1 className="text-3xl mt-7 ml-4 text-shadow-2xs">
-          
           🌿About BloomHaven
         </h1>
 
@@ -48,26 +47,32 @@ const About = () => {
                 We believe that beauty and responsibility
               </li>
               <div>
-                <h1 className="text-2xl text-shadow-2xs mt-6">✨ Our Mission</h1>
-                <p className="mt-2">To bring a haven of beautiful, affordable, and sustainable products to people who value quality and creativity.</p>
-
+                <h1 className="text-2xl text-shadow-2xs mt-6">
+                  ✨ Our Mission
+                </h1>
+                <p className="mt-2">
+                  To bring a haven of beautiful, affordable, and sustainable
+                  products to people who value quality and creativity.
+                </p>
               </div>
 
               <div>
-               <h2 className="text-2xl text-shadow-2xs mt-6">
-                🌸 Trusted Quality & Authentic Designs
-               </h2>
-               <p className="mt-2"></p>We take pride in offering products that are thoughtfully designed, beautifully made, and built to last.
-From elegant home décor to trendy fashion pieces, every product you find at BloomHaven carries our seal of authenticity and craftsmanship.
-
+                <h2 className="text-2xl text-shadow-2xs mt-6">
+                  🌸 Trusted Quality & Authentic Designs
+                </h2>
+                <p className="mt-2"></p>We take pride in offering products that
+                are thoughtfully designed, beautifully made, and built to last.
+                From elegant home décor to trendy fashion pieces, every product
+                you find at BloomHaven carries our seal of authenticity and
+                craftsmanship.
               </div>
 
-              
               <div className="mt-9 flex justify-center items-center">
                 <Link to="/products">
-                <button className="bg-[#1D1D1F] hover:bg-[#333333] text-white font-medium py-2 px-6 rounded-full transition-all duration-300">
-    Start Shoping
-</button></Link>
+                  <button className="bg-[#1D1D1F] hover:bg-[#333333] text-white font-medium py-2 px-6 rounded-full transition-all duration-300">
+                    Start Shoping
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
