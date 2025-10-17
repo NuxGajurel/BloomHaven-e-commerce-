@@ -20,7 +20,7 @@ const Home = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 m-6">
         {flowerProducts.map((flowerProduct) => (
-          <Link to="/products">
+          <Link to="/product">
             <div
               key={flowerProduct.id}
               className="rounded p-1 bg-white shadow-md items-center flex justify-center hover:border "

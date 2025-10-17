@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -7,19 +7,56 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 const App = () => {
+  const [cartItems, setCartItems] = useState([]);
+
+  
+  const increaseQty = (id) => {
+    setCartItems(
+      cartItems.map((item) =>
+        item.id === id ? { ...item, qty: item.qty + 1 } : item
+      )
+    );
+  };
+
+  const decreaseQty = (id) => {
+    setCartItems(
+      cartItems
+        .map((item) => (item.id === id ? { ...item, qty: item.qty - 1 } : item))
+        .filter((item) => item.qty > 0)
+    );
+  };
+
+  const removeItem = (id) => {
+    setCartItems(cartItems.filter((item) => item.id !== id));
+  };
+
   return (
-    <div>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-        <hr className="mt-4 border border-gray-200" />
-        <Footer />
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+     
+      <Navbar
+        cartItems={cartItems}
+        increaseQty={increaseQty}
+        decreaseQty={decreaseQty}
+        removeItem={removeItem}
+      />
+
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route
+          path="/product"
+          element={
+            <Product
+              cartItems={cartItems}
+              setCartItems={setCartItems}
+            />
+          }
+        />
+        <Route path="/about" element={<About />} />
+      </Routes>
+
+      <hr className="mt-4 border border-gray-200" />
+      <Footer />
+    </BrowserRouter>
   );
 };
 
