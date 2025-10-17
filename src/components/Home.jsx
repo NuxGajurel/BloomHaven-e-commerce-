@@ -82,7 +82,7 @@ const Home = () => {
             Continuous Care Tips – Each order includes simple flower-care
             instructions to help your blooms last longer.
           </li>
-          <Link to="/products">
+          <Link to="/product">
             <button className="bg-[#1D1D1F] hover:bg-[#333333] text-white font-medium py-2 px-6 rounded-full transition-all duration-300 lg:mt-8 mt-2 hidden sm:block">
               View Products
             </button>
