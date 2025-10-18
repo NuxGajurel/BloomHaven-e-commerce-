@@ -14,7 +14,6 @@ const Navbar = ({ cartItems = [], increaseQty, decreaseQty, removeItem }) => {
   return (
     <div>
       <nav className="flex items-center justify-between px-8 py-4 bg-white">
-        {/* search bar */}
         <div>
           <h4>
             <IoSearchOutline
@@ -119,7 +118,7 @@ const Navbar = ({ cartItems = [], increaseQty, decreaseQty, removeItem }) => {
                     </button>
 
                     <span>{item.qty}</span>
-                    <button
+                    <button 
                       onClick={() => decreaseQty(item.id)}
                       className="px-2 bg-gray-300 rounded hover:bg-gray-200"
                     >
