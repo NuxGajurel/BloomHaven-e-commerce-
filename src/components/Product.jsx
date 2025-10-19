@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import Three from "../../public/Img/3.jpg";
+import Four from '../../public/Img/4.jpg'
+import Seven from '../../public/Img/7.jpg'
+import Lala from '../../public/Img/lala.jpg'
 
 const Product = ({ cartItems, setCartItems, increaseQty, decreaseQty, removeItem }) => {
   const handleAddtoCart = (product) => {
@@ -24,21 +27,20 @@ const Product = ({ cartItems, setCartItems, increaseQty, decreaseQty, removeItem
     },
     {
       id: 2,
-      name: "Rose",
+      name:  "Sunflower",
       price: 1500,
-      image: Three,
+      image: Four,
     },
     {
       id: 3,
       name: "Lily",
       price: 1800,
-      image: Three,
+      image: Seven,
     },
     {
       id: 4,
-      name: "Tulip",
-      price: 2200,
-      image: Three,
+      name: "Rose",
+      image: Lala,
     },
   ];
 
