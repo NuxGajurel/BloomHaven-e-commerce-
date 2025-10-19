@@ -6,8 +6,8 @@ import Four from "../../public/Img/7.jpg";
 import { Link } from "react-router-dom";
 import Yup from "../../public/Img/yup.png";
 import Services from "../../public/Img/services1.jpg";
-import Services2 from '../../public/Img/services2.jpg';
-import Services3 from '../../public/Img/services3.jpg';
+import Services2 from "../../public/Img/services2.jpg";
+import Services3 from "../../public/Img/services3.jpg";
 
 const Home = () => {
   const flowerProducts = [
@@ -17,20 +17,20 @@ const Home = () => {
     { id: 4, url: Four },
   ];
 
-    const OurServices = [
-      {
-        id: 1,
-        image: Services,
-      },
-      {
-        id: 2,
-        image: Services2,
-      },
-      {
-        id: 3,
-        image: Services3,
-      },
-    ];
+  const OurServices = [
+    {
+      id: 1,
+      image: Services,
+    },
+    {
+      id: 2,
+      image: Services2,
+    },
+    {
+      id: 3,
+      image: Services3,
+    },
+  ];
 
   return (
     <div className="mt-2">
@@ -112,20 +112,20 @@ const Home = () => {
         <h1 className="text-3xl mt-7 flex justify-center items-center">
           Our Services
         </h1>
-         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 m-6">
-        {OurServices.map((OurService) => (
-          <div
-            key={OurService.id}
-            className="rounded p-1 bg-white shadow-md items-center flex justify-center hover:border"
-          >
-            <img
-              src={OurService.image}
-              alt={`Service ${OurService.id}`}
-              className="w-full h-[200px] object-cover rounded-lg"
-            />
-          </div>
-        ))}
-      </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 m-6">
+          {OurServices.map((OurService) => (
+            <div
+              key={OurService.id}
+              className="rounded p-1 bg-white shadow-md items-center flex justify-center hover:border"
+            >
+              <img
+                src={OurService.image}
+                alt={`Service ${OurService.id}`}
+                className="w-full h-[200px] object-cover rounded-lg"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
