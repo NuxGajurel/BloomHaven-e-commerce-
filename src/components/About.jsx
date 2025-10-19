@@ -68,7 +68,7 @@ const About = () => {
               </div>
 
               <div className="mt-9 flex justify-center items-center">
-                <Link to="/products">
+                <Link to="/product">
                   <button className="bg-[#1D1D1F] hover:bg-[#333333] text-white font-medium py-2 px-6 rounded-full transition-all duration-300">
                     Start Shoping
                   </button>
