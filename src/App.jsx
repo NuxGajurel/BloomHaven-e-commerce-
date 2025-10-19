@@ -5,11 +5,10 @@ import About from "./components/About";
 import Product from "./components/Product";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import Checkout from "./components/Checkout";
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
 
-  
   const increaseQty = (id) => {
     setCartItems(
       cartItems.map((item) =>
@@ -32,7 +31,6 @@ const App = () => {
 
   return (
     <BrowserRouter>
-     
       <Navbar
         cartItems={cartItems}
         increaseQty={increaseQty}
@@ -45,13 +43,11 @@ const App = () => {
         <Route
           path="/product"
           element={
-            <Product
-              cartItems={cartItems}
-              setCartItems={setCartItems}
-            />
+            <Product cartItems={cartItems} setCartItems={setCartItems} />
           }
         />
         <Route path="/about" element={<About />} />
+        <Route path="/check" element={<Checkout />} />
       </Routes>
 
       <hr className="mt-4 border border-gray-200" />

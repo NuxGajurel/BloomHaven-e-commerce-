@@ -4,6 +4,8 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoSearchOutline } from "react-icons/io5";
 import Logo from "../../public/Img/logo.png";
 import { RxCross1 } from "react-icons/rx";
+import Product from "./Product"
+
 
 const Navbar = ({ cartItems = [], increaseQty, decreaseQty, removeItem }) => {
   const [openAdd, setOpenAdd] = useState(false);
@@ -84,7 +86,7 @@ const Navbar = ({ cartItems = [], increaseQty, decreaseQty, removeItem }) => {
           </button>
         </div>
         {cartItems.length === 0 ? (
-          <div className="flex justify-center items-center h-full">
+          <div className="flex justify-center items-center h-full" onClick={()=> setOpenAdd(!openAdd)}>
             <Link to="/product">
               <button className="bg-[#1D1D1F] hover:bg-[#333333] text-white font-medium py-2 px-6 rounded-full transition-all duration-300">
                 Start Shoping
@@ -118,7 +120,7 @@ const Navbar = ({ cartItems = [], increaseQty, decreaseQty, removeItem }) => {
                     </button>
 
                     <span>{item.qty}</span>
-                    <button 
+                    <button
                       onClick={() => decreaseQty(item.id)}
                       className="px-2 bg-gray-300 rounded hover:bg-gray-200"
                     >
@@ -139,9 +141,11 @@ const Navbar = ({ cartItems = [], increaseQty, decreaseQty, removeItem }) => {
                 <h3 className="text-lg font-semibold text-right">
                   Total: Rs. {total.toLocaleString()}
                 </h3>
-                <button className="mt-3 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-md">
+                
+                <Link to='/check'> <button className="mt-3 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-md" onClick={()=> setOpenAdd(!openAdd)}>
                   Checkout
-                </button>
+                </button></Link>
+          
               </div>
             )}
           </div>
