@@ -1,10 +1,24 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Qr from "../../public/Img/qr.jpg";
 const Checkout = () => {
   const [open, setOpen] = useState(false);
+
+  const [image, setImage] = useState("");
   const handleOpen = (e) => {
     setOpen(e.target.checked);
   };
+
+  const inputRef = useRef(null);
+  const handleImage = () => {
+    inputRef.current.click();
+  };
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      setImage(URL.createObjectURL(file));
+    }
+  };
+
   return (
     <div>
       <div className="flex justify-center items-center bg-gray-50">
@@ -27,7 +41,8 @@ const Checkout = () => {
                 required
               />
               <br></br>
-              <input type="checkbox" className="mt-6 ml-3" required/> Are you sure
+              <input type="checkbox" className="mt-6 ml-3" required /> Are you
+              sure
               <h3 className="text-gray-900 mt-4 ml-3">Shipping Address </h3>
               <input
                 type="text"
@@ -77,13 +92,33 @@ const Checkout = () => {
                 Phone pay
               </label>
               {open && (
-                <div className="mt-4 flex justify-center">
-                  <img
-                    src={Qr}
-                    alt=""
-                    className="w-60"
-                    onClick={() => setOpen(!open)}
-                  />
+                <div className="mt-4">
+                  <div>
+                    <img
+                      src={Qr}
+                      alt=""
+                      className="w-60"
+                      onClick={() => setOpen(!open)}
+                    />
+                  </div>
+                  <div onClick={handleImage}>
+                    <input
+                      type="file"
+                      name=""
+                      id=""
+                      ref={inputRef}
+                      onChange={handleImageChange}
+                      className="bg-white hover:bg-[white]] text-black font-medium py-2 px-6 hidden"
+                    />
+                    <button className="bg-[#1D1D1F] w-50 text-white rounded-full ml-4 mt-5">
+                      Upload screenshot
+                    </button>
+                    <img
+                      src={image}
+                      alt=""
+                      className="h-70 w-70 mt-5 flex justify-center items-center ml-9"
+                    />
+                  </div>
                 </div>
               )}
               <button className="bg-[#1D1D1F] hover:bg-[#333333] text-white font-medium py-2 px-6 rounded-full transition-all duration-300 lg:w-120 mt-6 m-7 w-80">
