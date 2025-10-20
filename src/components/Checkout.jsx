@@ -27,7 +27,7 @@ const Checkout = () => {
                 required
               />
               <br></br>
-              <input type="checkbox" className="mt-6 ml-3" /> Are you sure
+              <input type="checkbox" className="mt-6 ml-3" required/> Are you sure
               <h3 className="text-gray-900 mt-4 ml-3">Shipping Address </h3>
               <input
                 type="text"
