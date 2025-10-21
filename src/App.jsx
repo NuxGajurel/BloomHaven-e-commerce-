@@ -29,7 +29,8 @@ const App = () => {
     setCartItems(cartItems.filter((item) => item.id !== id));
   };
 
-  return (
+  return (  
+    <> 
     <BrowserRouter>
       <Navbar
         cartItems={cartItems}
@@ -39,7 +40,7 @@ const App = () => {
       />
 
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home/>} />
         <Route
           path="/product"
           element={
@@ -49,10 +50,11 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/check" element={<Checkout />} />
       </Routes>
-
+    
       <hr className="mt-4 border border-gray-200" />
       <Footer />
     </BrowserRouter>
+     </>
   );
 };
 

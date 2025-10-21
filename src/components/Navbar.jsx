@@ -59,7 +59,7 @@ const Navbar = ({ cartItems = [], increaseQty, decreaseQty, removeItem }) => {
 
       <div className="flex justify-center space-x-5 mt-5">
         <Link
-          to="/home"
+          to="/"
           className="hover:text-pink-600 transition-colors text-black"
         >
           Home
