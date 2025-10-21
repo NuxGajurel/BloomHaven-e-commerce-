@@ -4,8 +4,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoSearchOutline } from "react-icons/io5";
 import Logo from "../../public/Img/logo.png";
 import { RxCross1 } from "react-icons/rx";
-import Product from "./Product"
-
+import Cart from "../../public/Img/cart.jpg";
 
 const Navbar = ({ cartItems = [], increaseQty, decreaseQty, removeItem }) => {
   const [openAdd, setOpenAdd] = useState(false);
@@ -86,7 +85,14 @@ const Navbar = ({ cartItems = [], increaseQty, decreaseQty, removeItem }) => {
           </button>
         </div>
         {cartItems.length === 0 ? (
-          <div className="flex justify-center items-center h-full" onClick={()=> setOpenAdd(!openAdd)}>
+          <div
+            className="mt-65 ml-24 h-full"
+            onClick={() => setOpenAdd(!openAdd)}
+          >
+            <div className="h-30 w-30">
+              <img src={Cart} alt="" />
+            </div>
+
             <Link to="/product">
               <button className="bg-[#1D1D1F] hover:bg-[#333333] text-white font-medium py-2 px-6 rounded-full transition-all duration-300">
                 Start Shoping
@@ -141,11 +147,16 @@ const Navbar = ({ cartItems = [], increaseQty, decreaseQty, removeItem }) => {
                 <h3 className="text-lg font-semibold text-right">
                   Total: Rs. {total.toLocaleString()}
                 </h3>
-                
-                <Link to='/check'> <button className="mt-3 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-md" onClick={()=> setOpenAdd(!openAdd)}>
-                  Checkout
-                </button></Link>
-          
+
+                <Link to="/check">
+                  {" "}
+                  <button
+                    className="mt-3 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-md"
+                    onClick={() => setOpenAdd(!openAdd)}
+                  >
+                    Checkout
+                  </button>
+                </Link>
               </div>
             )}
           </div>
