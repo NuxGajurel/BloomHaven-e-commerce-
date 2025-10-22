@@ -42,7 +42,7 @@ const Navbar = ({ cartItems = [], increaseQty, decreaseQty, removeItem }) => {
 
         <div className="">
           <div className="flex gap-8 text-gray-700 ">
-            <Link to="/home" className="text-2xl font-bold text-pink-600">
+            <Link to="#" className="text-2xl font-bold text-pink-600">
               <img src={Logo} alt="" className="h-12 lg:h-15" />
             </Link>
           </div>
