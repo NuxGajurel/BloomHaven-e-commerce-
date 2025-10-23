@@ -52,7 +52,7 @@ const Product = ({ cartItems, setCartItems, increaseQty, decreaseQty, removeItem
         {products.map((product) => (
           <div
             key={product.id}
-            className="border p-4 rounded-lg shadow hover:shadow-md transition"
+            className="p-4 rounded-lg shadow hover:shadow-md transition"
           >
             <img
               src={product.image}
