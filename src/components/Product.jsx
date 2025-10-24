@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import Three from "../../public/Img/3.jpg";
-import Four from '../../public/Img/4.jpg'
-import Seven from '../../public/Img/7.jpg'
-import Lala from '../../public/Img/lala.jpg'
+import Four from "../../public/Img/4.jpg";
+import Seven from "../../public/Img/7.jpg";
+import Lala from "../../public/Img/lala.jpg";
 
-const Product = ({ cartItems, setCartItems, increaseQty, decreaseQty, removeItem }) => {
+const Product = ({
+  cartItems,
+  setCartItems,
+  increaseQty,
+  decreaseQty,
+  removeItem,
+}) => {
   const handleAddtoCart = (product) => {
     const existingItem = cartItems.find((item) => item.id === product.id);
     if (existingItem) {
@@ -27,7 +33,7 @@ const Product = ({ cartItems, setCartItems, increaseQty, decreaseQty, removeItem
     },
     {
       id: 2,
-      name:  "Sunflower",
+      name: "Sunflower",
       price: 1500,
       image: Four,
     },
