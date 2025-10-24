@@ -29,32 +29,32 @@ const App = () => {
     setCartItems(cartItems.filter((item) => item.id !== id));
   };
 
-  return (  
-    <> 
-    <BrowserRouter>
-      <Navbar
-        cartItems={cartItems}
-        increaseQty={increaseQty}
-        decreaseQty={decreaseQty}
-        removeItem={removeItem}
-      />
-
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route
-          path="/product"
-          element={
-            <Product cartItems={cartItems} setCartItems={setCartItems} />
-          }
+  return (
+    <>
+      <BrowserRouter>
+        <Navbar
+          cartItems={cartItems}
+          increaseQty={increaseQty}
+          decreaseQty={decreaseQty}
+          removeItem={removeItem}
         />
-        <Route path="/about" element={<About />} />
-        <Route path="/check" element={<Checkout />} />
-      </Routes>
-    
-      <hr className="mt-4 border border-gray-200" />
-      <Footer />
-    </BrowserRouter>
-     </>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/product"
+            element={
+              <Product cartItems={cartItems} setCartItems={setCartItems} />
+            }
+          />
+          <Route path="/about" element={<About />} />
+          <Route path="/check" element={<Checkout />} />
+        </Routes>
+
+        <hr className="mt-4 border border-gray-200" />
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 };
 
