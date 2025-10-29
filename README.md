@@ -37,9 +37,7 @@ It provides a smooth shopping experience with clean UI components, dynamic produ
 
 
 ```markdown
-![Home Page](https://your-homepage-screenshot-link)
-![Product Page](https://your-productpage-screenshot-link)
-![Checkout Page](https://your-checkout-screenshot-link)
+
 
 # Clone the repository
 
