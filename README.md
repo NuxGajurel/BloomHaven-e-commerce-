@@ -5,7 +5,7 @@
 **BloomHaven** is a modern and elegant **e-commerce website** built with **React.js** and **Tailwind CSS**.  
 It provides a smooth shopping experience with clean UI components, dynamic product listings, and full responsiveness across all devices.
 
-![BloomHaven Preview](c:\Users\ACER\OneDrive\Pictures\Screenshots\Screenshot 2025-10-29 101327.png)  
+![BloomHaven Preview](https://imgur.com/a/iofdFO9)  
 _(Add a screenshot or banner of your website above)_
 
 ---
