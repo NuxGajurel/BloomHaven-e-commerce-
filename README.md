@@ -6,7 +6,6 @@
 It provides a smooth shopping experience with clean UI components, dynamic product listings, and full responsiveness across all devices.
 
 ![BloomHaven Preview](https://imgur.com/a/iofdFO9)  
-_(Add a screenshot or banner of your website above)_
 
 ---
 
@@ -34,7 +33,6 @@ _(Add a screenshot or banner of your website above)_
 
 ## 📸 Preview
 
-Add your screenshots here for a quick visual idea of your project:
 
 ```markdown
 ![Home Page](https://your-homepage-screenshot-link)
