@@ -41,7 +41,7 @@ const Home = () => {
           <Link to="/product">
             <div
               key={flowerProduct.id}
-              className="rounded p-1 bg-white shadow-md items-center flex justify-center hover:border "
+              className="rounded p-1 bg-white shadow-md items-center flex justify-center "
             >
               <img
                 src={flowerProduct.url}
