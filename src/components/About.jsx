@@ -66,14 +66,6 @@ const About = () => {
                 you find at BloomHaven carries our seal of authenticity and
                 craftsmanship.
               </div>
-
-              <div className="mt-9 flex justify-center items-center">
-                <Link to="/product">
-                  <button className="bg-[#1D1D1F] hover:bg-[#333333] text-white font-medium py-2 px-6 rounded-full transition-all duration-300">
-                    Start Shoping
-                  </button>
-                </Link>
-              </div>
             </div>
           </div>
         </div>
