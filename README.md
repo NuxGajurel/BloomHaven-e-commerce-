@@ -34,7 +34,7 @@ It provides a smooth shopping experience with clean UI components, dynamic produ
 ## 📸 Preview
 
 ![Home Page](https://github.com/NuxGajurel/BloomHaven-e-commerce-/blob/main/public/Img/main.png?raw=true)
-![Product Page](https://github.com/NuxGajurel/BloomHaven-e-commerce-/blob/main/public/Img/3.jpg?raw=true)
+![Product Page](![alt text](image.png))
 ![Checkout Page](https://github.com/NuxGajurel/BloomHaven-e-commerce-/blob/main/public/Img/cart.jpg?raw=true)
 
 ---
