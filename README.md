@@ -33,7 +33,7 @@ It provides a smooth shopping experience with clean UI components, dynamic produ
 
 ## 📸 Preview
 
-![alt text](image.png))
+![alt text](image.png)
 
 
 ---
