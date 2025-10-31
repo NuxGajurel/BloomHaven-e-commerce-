@@ -22,33 +22,36 @@ It provides a smooth shopping experience with clean UI components, dynamic produ
 
 ## 🚀 Features
 
-- 🛒 **Interactive Product Display** – Show products dynamically
-- 🔍 **Product Search & Filter** – Easy browsing experience
-- ❤️ **Add to Favorites/Cart** – Save products for later
-- 💳 **Checkout Page** – Simple and elegant payment UI
-- 📱 **Fully Responsive Design** – Works seamlessly on all screen sizes
-- ⚡ **Fast Performance** – Powered by Vite and React
+- 🛒 **Interactive Product Display** – Show products dynamically  
+- 🔍 **Product Search & Filter** – Easy browsing experience  
+- ❤️ **Add to Favorites/Cart** – Save products for later  
+- 💳 **Checkout Page** – Simple and elegant payment UI  
+- 📱 **Fully Responsive Design** – Works seamlessly on all screen sizes  
+- ⚡ **Fast Performance** – Powered by Vite and React  
 
 ---
 
 ## 📸 Preview
 
-![Home Page](https://your-homepage-screenshot-link)
-![Product Page](https://your-productpage-screenshot-link)
-![Checkout Page](https://your-checkout-screenshot-link)
+![Home Page](https://github.com/NuxGajurel/BloomHaven-e-commerce-/blob/main/public/Img/main.png?raw=true)
+![Product Page](https://github.com/NuxGajurel/BloomHaven-e-commerce-/blob/main/public/Img/3.jpg?raw=true)
+![Checkout Page](https://github.com/NuxGajurel/BloomHaven-e-commerce-/blob/main/public/Img/cart.jpg?raw=true)
 
-```markdown
-1. Clone the repository
+---
 
+## 🧑‍💻 Setup Instructions
+
+Follow these steps to run the project locally:
+
+```bash
+# 1️⃣ Clone the repository
 git clone https://github.com/NuxGajurel/BloomHaven-e-commerce-.git
 
-2. Navigate to the project folder
+# 2️⃣ Navigate to the project folder
+cd BloomHaven
 
-cd BloomHaven 3. Install dependencies
-
+# 3️⃣ Install dependencies
 npm install
 
-4. Run the development server
-
+# 4️⃣ Run the development server
 npm run dev
-```
