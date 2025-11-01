@@ -12,7 +12,7 @@ const Home = () => {
   const OurServices = [
     { id: 1, image: "/Img/services1.jpg" },
     { id: 2, image: "/Img/services2.jpg" },
-    { id: 3, image: "/Img/services3.jpg" },
+    { id: 3, image: "/Img/Services3.jpg" },
   ];
 
   return (
