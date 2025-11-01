@@ -1,35 +1,18 @@
 import React from "react";
-import Flower from "../../public/Img/mero.jpg";
-import Two from "../../public/Img/6.jpg";
-import Three from "../../public/Img/3.jpg";
-import Four from "../../public/Img/7.jpg";
 import { Link } from "react-router-dom";
-import Yup from "../../public/Img/yup.png";
-import Services from "../../public/Img/services1.jpg";
-import Services2 from "../../public/Img/services2.jpg";
-import Services3 from "../../public/Img/services3.jpg";
 
 const Home = () => {
   const flowerProducts = [
-    { id: 1, url: Flower },
-    { id: 2, url: Two },
-    { id: 3, url: Three },
-    { id: 4, url: Four },
+    { id: 1, url: "/Img/mero.jpg" },
+    { id: 2, url: "/Img/6.jpg" },
+    { id: 3, url: "/Img/3.jpg" },
+    { id: 4, url: "/Img/7.jpg" },
   ];
 
   const OurServices = [
-    {
-      id: 1,
-      image: Services,
-    },
-    {
-      id: 2,
-      image: Services2,
-    },
-    {
-      id: 3,
-      image: Services3,
-    },
+    { id: 1, image: "/Img/services1.jpg" },
+    { id: 2, image: "/Img/services2.jpg" },
+    { id: 3, image: "/Img/services3.jpg" },
   ];
 
   return (
@@ -38,11 +21,8 @@ const Home = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 m-6">
         {flowerProducts.map((flowerProduct) => (
-          <Link to="/product">
-            <div
-              key={flowerProduct.id}
-              className="rounded p-1 bg-white shadow-md items-center flex justify-center hover:border"
-            >
+          <Link to="/product" key={flowerProduct.id}>
+            <div className="rounded p-1 bg-white shadow-md items-center flex justify-center hover:border">
               <img
                 src={flowerProduct.url}
                 alt={`Flower ${flowerProduct.id}`}
@@ -52,13 +32,16 @@ const Home = () => {
           </Link>
         ))}
       </div>
+
       <h1 className="lg:text-4xl text-2xl mt-9 m-6 flex justify-center items-center">
         🌿 How Our Products Are Made
       </h1>
+
       <div className="lg:flex lg:justify-between mt-8 bg-gray-100 shadow-md">
         <div className="mt-3">
-          <img src={Yup} alt="" />
+          <img src="/Img/yup.png" alt="Process" />
         </div>
+
         <div className="mt-22 mr-8 gap-3 ml-6">
           <li>
             Selection of Fresh Flowers – We handpick the freshest, locally
@@ -100,6 +83,7 @@ const Home = () => {
             Continuous Care Tips – Each order includes simple flower-care
             instructions to help your blooms last longer.
           </li>
+
           <Link to="/product">
             <button className="bg-[#1D1D1F] hover:bg-[#333333] text-white font-medium py-2 px-6 rounded-full transition-all duration-300 lg:mt-8 mt-2 hidden sm:block">
               View Products
@@ -112,6 +96,7 @@ const Home = () => {
         <h1 className="text-3xl mt-7 flex justify-center items-center">
           Our Services
         </h1>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 m-6">
           {OurServices.map((OurService) => (
             <div
