@@ -27,7 +27,7 @@ const Product = ({
   const products = [
     {
       id: 1,
-      name: "Sunflower",
+      name: "Mix flowers",
       price: 2000,
       image: Three,
     },
@@ -46,6 +46,7 @@ const Product = ({
     {
       id: 4,
       name: "Rose",
+      price: 2200,
       image: Lala,
     },
   ];
